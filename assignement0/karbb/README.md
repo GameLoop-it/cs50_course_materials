@@ -1,1 +1,1 @@
-Consegna **Karbb**: https://github.com/rraffaele1/CS50/tree/master/assignment0
+Consegna **Karbb**: https://github.com/Karbb/pong-CS50
