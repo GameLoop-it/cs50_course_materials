@@ -10,7 +10,7 @@
 
 PlayState = Class{__includes = BaseState}
 
-PIPE_SPEED = 160
+PIPE_SPEED = 120
 PIPE_WIDTH = 70
 PIPE_HEIGHT = 288
 
@@ -52,7 +52,7 @@ function PlayState:update(dt)
             math.min(self.lastY + math.random(-20, 20), VIRTUAL_HEIGHT - gapHeight - PIPE_HEIGHT))
         
         -- CS50: randomized the pipes spawn interval
-        self.spawnTime = math.random(2, 8)
+        self.spawnTime = math.random(1, 3)
 
         --[[ CS50: 🎿🐶
             ACTIVATE SCICANE
@@ -117,10 +117,7 @@ function PlayState:update(dt)
     for k, pair in pairs(self.pipePairs) do
         for l, pipe in pairs(pair.pipes) do
             if self.bird:collides(pipe) then
-                sounds['explosion']:play()
-                sounds['hurt']:play()
-
-                collision(self)
+                collisionHandler(self)
             end
         end
     end
@@ -130,19 +127,13 @@ function PlayState:update(dt)
 
     -- reset if we get to the ground
     if self.bird.y > VIRTUAL_HEIGHT - 15 then
-        sounds['explosion']:play()
-        sounds['hurt']:play()
-
-        collision(self)
+        collisionHandler(self)
         self.bird:reset()
     end
 
     -- CS50: fixed THE bug. Added ceiling collision
     if self.bird.y < - 15 then
-        sounds['explosion']:play()
-        sounds['hurt']:play()
-
-        collision(self)
+        collisionHandler(self)
         self.bird:reset()
     end
 end
@@ -157,18 +148,21 @@ function PlayState:render()
 
     -- CS50: Draw remaining lifes on screen as hearts
     for i = 0, self.lives - 1 do
-        love.graphics.draw(self.heart, i * 64 + 10, VIRTUAL_HEIGHT - self.heart:getHeight() - 10)
+        love.graphics.draw(self.heart, i * 64 + 10, VIRTUAL_HEIGHT - self.heart:getHeight() - 10    )
     end
 
     self.bird:render()
 end
 
 -- CS50: utility function to manage collision conseguences
-function collision(self)
+function collisionHandler(self)
 
     -- remove heart when not invincible
     if self.bird.invicibility <= 0 then
         self.lives = self.lives - 1
+
+        sounds['explosion']:play()
+        sounds['hurt']:play()
       
         -- 0 lives --> score
         if(self.lives < 0) then

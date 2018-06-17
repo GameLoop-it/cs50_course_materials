@@ -90,7 +90,7 @@ function Bird:update(dt)
 
     --CS50: if bird is CHARGING, keep track for how many frames is in this state
     if(self.state == CHARGING_STATE) then
-        self.timer = self.timer + 0.5
+        self.timer = self.timer + 0.4
     end
 
     --CS50: if bird is JUMPING, jump high as much as ( with an upper limit ) charged the jump
