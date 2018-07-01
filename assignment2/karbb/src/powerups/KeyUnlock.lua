@@ -1,0 +1,34 @@
+--[[
+    CS50
+    -- Powerup Class --
+
+    Represents a powerup which will randomly spawn after a brick is hit, descending 
+    toward the bottom. If the paddle will pick up it, it will gains a new
+    temporary power.
+]]
+
+KeyUnlock = Class{__includes = Powerup}
+
+function KeyUnlock:init(x, y)
+    -- simple positional and dimensional variables
+    self.width = 16
+    self.height = 16
+
+    self.x = x
+    self.y = y
+
+    -- these variables are for keeping track of our velocity on both the
+    -- X and Y axis, since the ball can move in two dimensions
+    self.dy = POWERUP_GRAVITY
+    self.dx = 0
+
+    self.timer = 0
+
+    self.frame = gFrames['powerups'][10]
+
+    self.type = "key"
+end
+
+function KeyUnlock:activate(game)
+        table.insert(game.paddle.power, { type = self.type, timer = love.timer.getTime() } )
+end
