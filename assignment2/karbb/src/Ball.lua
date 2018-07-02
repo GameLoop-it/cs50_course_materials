@@ -31,6 +31,9 @@ function Ball:init(skin)
 
     --CS50: Ball attribute to check if is or not stuck because of attractor powerup
     self.stuck = false
+
+    self.lastframeStuck = false
+    self.frameStuck = false
 end
 
 --[[
@@ -65,8 +68,11 @@ function Ball:reset()
 end
 
 function Ball:update(dt, paddle)
+    self.lastframeStuck = self.frameStuck
+    self.frameStuck = self.stuck
+   
     --CS50: Attractor powerup change ball update function
-    if self.stuck then   
+    if self.stuck then
         if(self.x < 0) then
             self.y = paddle.y
             self.x = 0
@@ -76,17 +82,20 @@ function Ball:update(dt, paddle)
         else
             self.x = self.x + paddle.dx * dt
         end
+        return
+    end
 
+    if(not self.stuck and self.lastframeStuck) then
         local mousex, mousey = push:toGame(love.mouse.getX(),love.mouse.getY())
-        
+       
         if(mousex == nil or mousey == nil) then
+            print()
             angle = math.atan2(mousey - self.y + self.width / 2, mousex - self.x  + self.width / 2)
         
             self.dx = math.cos(angle) * 100
             -- negative sin because the system is based on ball, not on game coordinates
             self.dy = -math.sin(angle) * 100
         end
-        return
     end
     
     self.x = self.x + self.dx * dt
