@@ -23,16 +23,23 @@ Oltretutto molti utenti di Gameloop sono pronti a fornire supporto e a condivide
 
 Inoltre, non ci limitiamo solo a seguire il corso, abbiamo creato anche una **hard mode**, ovvero delle sfide aggiuntive, curate dal nostro caro [*Wintermute*](https://twitter.com/winterismute), che potete trovare sul [nostro forum](https://forum.gameloop.it/d/449-gameloop50-seguiamo-il-cs50-insieme-impariamo-a-sviluppare-videogiochi/)!
 
-
 ## Cos'è questo repository?
 Una collezione di tutti gli assignment del CS50 che sono stati creati dagli utenti di [Gameloop.it](https://gameloop.it/).  
 Sarà un ricordo per chi ha partecipato ed una risorsa per chi affronterà il corso in un secondo momento.
 
 ## Voglio seguire il corso, cosa devo fare?
-Sul [forum](https://forum.gameloop.it/d/449-gameloop50-seguiamo-il-cs50-insieme-impariamo-a-sviluppare-videogiochi/) abbiamo tutte le informazioni che servono!  
-Inoltre abbiamo anche un canale dedicato su Discord dove siamo **molto** attivi.
+Per qualsiasi dubbio fate un salto sul [forum](https://forum.gameloop.it/d/449-gameloop50-seguiamo-il-cs50-insieme-impariamo-a-sviluppare-videogiochi/) o sul canale dedicato su [Discord](https://discord.gg/VzVMpFq) dove siamo **molto** attivi.
 
 ---
+
+# Prossimo assignment: Super Mario Bros
+- **Consegna**: 15 Settembre
+- **Progetto di partenza**: https://cdn.cs50.net/games/2018/spring/assignments/4/assignment4.zip
+- **Video**: https://www.youtube.com/watch?v=gvONAgleKPg
+- **Obiettivi**: https://github.com/Karbb/CS50-source/tree/master/assignment4
+- **Obiettivi (hard mode)**: https://forum.gameloop.it/d/449-gameloop50-seguiamo-il-cs50-insieme-impariamo-a-sviluppare-videogiochi/68
+
+Con *Super Mario Bros* si affronteranno vari temi come tile map con collisioni, animazioni 2D, generazione procedurale dei livelli, fisica per un platformer ed IA basilare.
 
 # Assignment sviluppati
 
@@ -56,5 +63,3 @@ Inoltre abbiamo anche un canale dedicato su Discord dove siamo **molto** attivi.
   <img width="60%" src="https://imgur.com/vC0b29s.png">
 </p>
 
-
-## 4 - ...
