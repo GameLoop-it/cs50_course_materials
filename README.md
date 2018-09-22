@@ -32,14 +32,13 @@ Per qualsiasi dubbio fate un salto sul [forum](https://forum.gameloop.it/d/449-g
 
 ---
 
-# Prossimo assignment: Super Mario Bros
-- **Consegna**: 15 Settembre
-- **Progetto di partenza**: https://cdn.cs50.net/games/2018/spring/assignments/4/assignment4.zip
-- **Video**: https://www.youtube.com/watch?v=gvONAgleKPg
-- **Obiettivi**: https://github.com/Karbb/CS50-source/tree/master/assignment4
-- **Obiettivi (hard mode)**: https://forum.gameloop.it/d/449-gameloop50-seguiamo-il-cs50-insieme-impariamo-a-sviluppare-videogiochi/68
+# Prossimo assignment: The Legend of Zelda
+- **Consegna**: 2 Ottobre
+- **Progetto di partenza**: https://github.com/Karbb/CS50-source/tree/master/assignment5
+- **Video**: https://www.youtube.com/watch?v=aE25rzLO-fo
+- **Obiettivi**: https://github.com/Karbb/CS50-source/tree/master/assignment5
+- **Obiettivi (hard mode)**: https://forum.gameloop.it/d/449-gameloop50-seguiamo-il-cs50-insieme-impariamo-a-sviluppare-videogiochi/77
 
-Con *Super Mario Bros* si affronteranno vari temi come tile map con collisioni, animazioni 2D, generazione procedurale dei livelli, fisica per un platformer ed IA basilare.
 
 # Assignment sviluppati
 
@@ -47,19 +46,53 @@ Con *Super Mario Bros* si affronteranno vari temi come tile map con collisioni, 
 <p align="center">
   <img width="60%" src="https://imgur.com/cZh22IN.png">
 </p>
-
+- Attributi degli oggetti e loro manipolazione (posizione e velocità)
+- RNG
+- IA semplice
+- Collisioni AABB
+  
 ## 1 - Flappy bird
 <p align="center">
   <img width="60%" src="https://imgur.com/CuC9SQq.png">
 </p>
+
+- Sprites
+- Generazione random del livello
+- States
+- Background scrolling
+- Meccaniche dei powerup
+
 
 ## 2 - Breakout
 <p align="center">
   <img width="60%" src="https://imgur.com/qAKY0FV.png">
 </p>
 
+- Spritesheet
+- Particle Effects
+- Organizzazione codice 
+- Salvare i punteggi
+
+
 ## 3 - Match 3
 <p align="center">
   <img width="60%" src="https://imgur.com/vC0b29s.png">
 </p>
+
+- Meccaniche puzzle game
+- Grid based system
+- Tween
+- Libreria Lua Knife
+
+
+## 4 - Super Mario Bros
+<p align="center">
+  <img width="60%" src="https://imgur.com/hBTEyIN.png">
+</p>
+
+- Meccaniche platformer 2D a scorrimento laterale
+- Generazione random della TileMap del livello
+- Collisioni con callback
+- Nemici con semplice IA
+
 
