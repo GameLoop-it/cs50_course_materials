@@ -34,7 +34,7 @@ Per qualsiasi dubbio fate un salto sul [forum](https://forum.gameloop.it/d/449-g
 
 # Prossimo assignment: The Legend of Zelda
 - **Consegna**: 2 Ottobre
-- **Progetto di partenza**: https://github.com/Karbb/CS50-source/tree/master/assignment5
+- **Progetto di partenza**: https://cdn.cs50.net/games/2018/spring/assignments/5/assignment5.zip
 - **Video**: https://www.youtube.com/watch?v=aE25rzLO-fo
 - **Obiettivi**: https://github.com/Karbb/CS50-source/tree/master/assignment5
 - **Obiettivi (hard mode)**: https://forum.gameloop.it/d/449-gameloop50-seguiamo-il-cs50-insieme-impariamo-a-sviluppare-videogiochi/77
