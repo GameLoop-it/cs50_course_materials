@@ -1,1 +1,0 @@
-"C:\Users\Manuel\Dropbox\love2D\love.exe" . --console
