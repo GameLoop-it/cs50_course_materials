@@ -1,0 +1,1 @@
+Attractor = Class{__includes = Powerup}
