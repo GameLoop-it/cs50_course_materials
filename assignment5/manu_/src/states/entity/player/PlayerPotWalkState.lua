@@ -127,7 +127,7 @@ function PlayerPotWalkState:update(dt)
             -- readjust
             self.entity.y = self.entity.y - PLAYER_WALK_SPEED * dt
         end
-        self.entity:changeState("idle")
+        self.entity:changeState("pot-idle", {pot = self.pot, potIndex = self.potIndex})
     end
     
     self.pot.x = self.entity.x
