@@ -1,0 +1,82 @@
+--[[
+    GD50
+    Legend of Zelda
+
+    -- constants --
+
+    Author: Colton Ogden
+    cogden@cs50.harvard.edu
+]]
+
+rnd = math.random
+
+VIRTUAL_WIDTH = 384
+VIRTUAL_HEIGHT = 216
+
+WINDOW_WIDTH = 1280
+WINDOW_HEIGHT = 720
+
+TILE_SIZE = 16
+
+--
+-- entity constants
+--
+PLAYER_WALK_SPEED = 60
+OBJECT_MOV_SPEED = 120
+
+--
+-- map constants
+--
+MAP_WIDTH = VIRTUAL_WIDTH / TILE_SIZE - 2                               -- 22
+MAP_HEIGHT = math.floor(VIRTUAL_HEIGHT / TILE_SIZE) - 2                 -- 11
+
+MAP_RENDER_OFFSET_X = (VIRTUAL_WIDTH - (MAP_WIDTH * TILE_SIZE)) / 2     -- 16
+MAP_RENDER_OFFSET_Y = (VIRTUAL_HEIGHT - (MAP_HEIGHT * TILE_SIZE)) / 2   -- 20
+
+MAP_COLLISION_OFFSET = 2
+
+--
+-- tile IDs
+--
+TILE_TOP_LEFT_CORNER = 4
+TILE_TOP_RIGHT_CORNER = 5
+TILE_BOTTOM_LEFT_CORNER = 23
+TILE_BOTTOM_RIGHT_CORNER = 24
+
+TILE_EMPTY = 19
+
+TILE_FLOORS = {
+    7, 8, 9, 10, 11, 12, 13,
+    26, 27, 28, 29, 30, 31, 32,
+    45, 46, 47, 48, 49, 50, 51,
+    64, 65, 66, 67, 68, 69, 70,
+    88, 89, 107, 108
+}
+
+TILE_TOP_WALLS = {58, 59, 60}
+TILE_BOTTOM_WALLS = {79, 80, 81}
+TILE_LEFT_WALLS = {77, 96, 115}
+TILE_RIGHT_WALLS = {78, 97, 116}
+
+TILE_CENTER_WALLS = {120}
+
+MAX_POTS_NUMBER = 5
+MAX_ENTITY_NUMBER = 10
+
+--
+-- CSV CONSTANTS
+--
+CSV_PLAYER = "P"
+
+CSV_SWITCH = "B"
+CSV_POT = "V"
+
+CSV_SKELETON = "K"
+CSV_SKELETON2 = "K2"
+CSV_GHOST = "G"
+CSV_SLIME = "L"
+
+CSV_WALL = "W"
+
+CSV_OOZE = "M"
+CSV_FIRE = "F"
