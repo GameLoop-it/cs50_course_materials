@@ -32,7 +32,7 @@ Per qualsiasi dubbio fate un salto sul [forum](https://forum.gameloop.it/d/449-g
 
 ---
 
-# Prossimo assignment: #8 
+# Prossimo assignment: #8 Helicopter Game 3D (con Unity3D e Blender)
 - **Consegna**: 16 Ottobre
 - **Progetto di partenza**: https://cdn.cs50.net/games/2018/spring/assignments/8/assignment8.zip
 - **Video**: https://youtu.be/u--IZytbXq0
