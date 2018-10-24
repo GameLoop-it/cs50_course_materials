@@ -32,16 +32,18 @@ Per qualsiasi dubbio fate un salto sul [forum](https://forum.gameloop.it/d/449-g
 
 ---
 
-# Prossimo assignment: #6 Angry Birds 
+# Prossimo assignment: #8 
 - **Consegna**: 16 Ottobre
-- **Progetto di partenza**: https://cdn.cs50.net/games/2018/spring/assignments/6/assignment6.zip
-- **Video**: https://youtu.be/rVCjeFQrK38 
+- **Progetto di partenza**: https://cdn.cs50.net/games/2018/spring/assignments/8/assignment8.zip
+- **Video**: https://youtu.be/u--IZytbXq0
 - **Obiettivi**: 
 ```
-  1. Read and understand all of the Angry Birds source code from Lecture 6.
-  2. Implement it such that when the player presses the space bar after they've launched an Alien (and it hasn't hit anything yet), split the Alien into three Aliens that all behave just like the base Alien.
+    1. Download Unity and get familiar with its interface.
+    2. Read and understand all of the Helicopter Game 3D source code from Lecture 8.
+    3. Add Gems to the game that spawn in much the same way as Coins, though more rarely so. Gems should be worth 5 coins when collected and despawn when off the left edge of the screen.
+    4. Fix the bug whereby the scroll speed of planes, coins, and buildings doesn't reset when the game is restarted via the space bar.
 ```
-Descrizione dettagliata qui: https://github.com/Karbb/CS50-source/tree/master/assignment6#threes-company
+Descrizione dettagliata qui: https://github.com/Karbb/CS50-source/tree/master/assignment8
 - **Obiettivi (hard mode)**: waiting for...
 
 # Assignment sviluppati
@@ -112,3 +114,21 @@ Descrizione dettagliata qui: https://github.com/Karbb/CS50-source/tree/master/as
 - *Hitbox* e *Hurtbox*
 - *Data driven programming* per generare le entità (i nemici) e gli oggetti di gioco
 - Eventi con `Events.dispatch()`, `Events.on()`
+
+## 6 - Angry Birds
+<p align="center">
+  <img width="60%" src="https://imgur.com/yPupbWM.png">
+</p>
+
+- Simulazione fisica con Box2D
+- Mouse input
+
+## 7 - Pokemon
+<p align="center">
+  <img width="60%" src="https://imgur.com/hWJvg3g.png">
+</p>
+
+- State stack
+- Turn based system
+- GUI
+- Meccaniche RPG
