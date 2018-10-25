@@ -32,13 +32,17 @@ Per qualsiasi dubbio fate un salto sul [forum](https://forum.gameloop.it/d/449-g
 
 ---
 
-# Prossimo assignment: The Legend of Zelda
-- **Consegna**: 2 Ottobre
-- **Progetto di partenza**: https://cdn.cs50.net/games/2018/spring/assignments/5/assignment5.zip
-- **Video**: https://www.youtube.com/watch?v=aE25rzLO-fo
-- **Obiettivi**: https://github.com/Karbb/CS50-source/tree/master/assignment5
-- **Obiettivi (hard mode)**: https://forum.gameloop.it/d/449-gameloop50-seguiamo-il-cs50-insieme-impariamo-a-sviluppare-videogiochi/77
-
+# Prossimo assignment: #6 Angry Birds 
+- **Consegna**: 16 Ottobre
+- **Progetto di partenza**: https://cdn.cs50.net/games/2018/spring/assignments/6/assignment6.zip
+- **Video**: https://youtu.be/rVCjeFQrK38 
+- **Obiettivi**: 
+```
+  1. Read and understand all of the Angry Birds source code from Lecture 6.
+  2. Implement it such that when the player presses the space bar after they've launched an Alien (and it hasn't hit anything yet), split the Alien into three Aliens that all behave just like the base Alien.
+```
+Descrizione dettagliata qui: https://github.com/Karbb/CS50-source/tree/master/assignment6#threes-company
+- **Obiettivi (hard mode)**: waiting for...
 
 # Assignment sviluppati
 
@@ -46,6 +50,7 @@ Per qualsiasi dubbio fate un salto sul [forum](https://forum.gameloop.it/d/449-g
 <p align="center">
   <img width="60%" src="https://imgur.com/cZh22IN.png">
 </p>
+
 - Attributi degli oggetti e loro manipolazione (posizione e velocità)
 - RNG
 - IA semplice
@@ -96,3 +101,14 @@ Per qualsiasi dubbio fate un salto sul [forum](https://forum.gameloop.it/d/449-g
 - Nemici con semplice IA
 
 
+## 5 - Zelda
+<p align="center">
+  <img width="60%" src="https://i.imgur.com/pGv0rcS.png">
+</p>
+
+- Prospettiva *top-down 2D*
+- *Generazione dungeon infinito* (oppure generazione dungeon da file CSV per l'hard mode)
+- *Sreen Scrolling* per le transizioni della camera tra una stanza e l'altra del dungeon
+- *Hitbox* e *Hurtbox*
+- *Data driven programming* per generare le entità (i nemici) e gli oggetti di gioco
+- Eventi con `Events.dispatch()`, `Events.on()`
