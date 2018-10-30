@@ -28,7 +28,6 @@ function PlayerPotIdleState:update(dt)
     self.pot.y = self.entity.y - 6
 
     if love.keyboard.isDown("space") then
-        print(self.potIndex)
         local dx = 0
         local dy = 0
         if self.entity.direction == "up" then
