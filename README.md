@@ -132,3 +132,11 @@ Descrizione dettagliata qui: https://github.com/Karbb/CS50-source/tree/master/as
 - Turn based system
 - GUI
 - Meccaniche RPG
+
+## 8 - Helicopter 3D
+<p align="center">
+  <img width="60%" src="https://imgur.com/loQ8OpC.png">
+</p>
+
+- Unity 3D: Game Object, C#, MonoBehaviour, Co-routine e `yield return`
+- Gioco scorrimento laterale in 3D (Gameplay 2.5D)
