@@ -106,16 +106,15 @@ function EntityWalkState:chooseDirection(room)
     if self.entity.IA ~= "wandering" then
         local directionNum = {}
         self.moveDuration = 0.25
-        if room.player.x + 4 > self.entity.x then
+        local padding = 6
+        if room.player.x + padding > self.entity.x then
             table.insert(directionNum, 2)
-        end
-        if room.player.x - 4 < self.entity.x then
+        elseif room.player.x - padding < self.entity.x then
             table.insert(directionNum, 1)
         end
-        if room.player.y - 4 < self.entity.y then
+        if room.player.y - padding < self.entity.y then
             table.insert(directionNum, 3)
-        end
-        if room.player.y + 4 > self.entity.y then
+        elseif room.player.y + padding > self.entity.y then
             table.insert(directionNum, 4)
         end
         self.entity.direction = directions[directionNum[math.random(#directionNum)]]
