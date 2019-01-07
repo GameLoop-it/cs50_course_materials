@@ -146,7 +146,7 @@ Per qualsiasi dubbio fate un salto sul [forum](https://forum.gameloop.it/d/449-g
 
 ## 10 - Portal (Unity3D e Blender)
 <p align="center">
-  <img width="60%" src="https://imgur.com/a/Re0fSkJ.png">
+  <img width="60%" src="https://imgur.com/WqseaAq.png">
 </p>
 
 - ProBuilder & ProGrids
