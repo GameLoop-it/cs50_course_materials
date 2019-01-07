@@ -32,10 +32,6 @@ Per qualsiasi dubbio fate un salto sul [forum](https://forum.gameloop.it/d/449-g
 
 ---
 
-# Prossimo assignment: 
-
-
-
 # Assignment sviluppati
 
 ## 0 - Pong
