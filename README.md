@@ -32,28 +32,7 @@ Per qualsiasi dubbio fate un salto sul [forum](https://forum.gameloop.it/d/449-g
 
 ---
 
-# Prossimo assignment: #9 - Dreadhalls (con Unity3D e Blender)
-- **Consegna assignment**: 10 Dicembre
-- **Progetto di partenza**: https://cdn.cs50.net/games/2018/spring/assignments/9/assignment9.zip
-- **Video**: https://youtu.be/BORUaRbwOaI 
-- **Obiettivi**: 
-```
-  1. Read and understand all of the Dreadhalls source code from Lecture 9.
-  2. Spawn holes in the floor of the maze that the player can fall through (but not too many; just three or four per maze is probably sufficient, depending on maze size).
-  3. When the player falls through any holes, transition to a “Game Over” screen similar to the Title Screen, implemented as a separate scene. When the player presses “Enter” in the “Game Over” scene, they should be brought back to the title.
-  4. Add a Text label to the Play scene that keeps track of which maze they’re in, incrementing each time they progress to the next maze. This can be implemented as a static variable, but it should be reset to 0 if they get a Game Over.
-```
-Descrizione dettagliata qui: https://github.com/Karbb/CS50-source/tree/master/assignment9
-- **Obiettivi (hard mode)**: waiting for...
-
-Argomenti di questo assignment:
-- Texturing
-- Materials and lightning
-- 3D Maze generation
-- First Person Controllers
-- Multiple Scenes
-- Fog
-- UI Components and Unity 2D
+# Prossimo assignment: 
 
 
 
@@ -151,3 +130,27 @@ Argomenti di questo assignment:
 
 - Unity 3D: Game Object, C#, MonoBehaviour, Co-routine e `yield return`
 - Gioco scorrimento laterale in 3D (Gameplay 2.5D)
+
+## 9 - Dreadhalls (Unity3D e Blender)
+<p align="center">
+  <img width="60%" src="https://imgur.com/kNeQcwR.png">
+</p>
+
+- Texturing
+- Materials and lightning
+- 3D Maze generation
+- First Person Controllers
+- Multiple Scenes
+- Fog
+- UI Components and Unity 2D
+
+## 10 - Portal (Unity3D e Blender)
+<p align="center">
+  <img width="60%" src="https://imgur.com/a/Re0fSkJ.png">
+</p>
+
+- ProBuilder & ProGrids
+- Raycasting
+- RenderTexture
+- Texture Masking
+- Teleporting
